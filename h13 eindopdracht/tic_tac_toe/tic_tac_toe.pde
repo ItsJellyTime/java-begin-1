@@ -43,7 +43,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(237,201,175);
   grid.afbeelden();
   drawPlayerLabel();
   gameEigenschappen();
@@ -107,12 +107,12 @@ void showWinner() {
     break; 
 //als player 1 wint //<>//
   case 1:
-    fill(100, 255, 0); 
+    fill(0); 
     text("Player 1 heeft gewonnen (N voor nieuw spel)", 300, 15);
     break; 
 //als player 2 wint
   case 2:
-    fill(100, 255, 0);
+    fill(0);
     text("Player 2 heeft gewonnen!(N voor nieuw spel)", 300, 15);
     break;
   }
@@ -224,8 +224,8 @@ class Circle {
 //rondjeeeeee
   void afbeelden() {
     strokeWeight(15);
-    stroke(255,255,0);
-    fill(255);
+    stroke(0,0,179);
+    fill(237,201,175);
     pushMatrix();
     //waar hij moet komen als je op je muis klikt
     ellipse(100 + 200 * column, 100 + 200* row, 
@@ -249,7 +249,7 @@ class Cross {
 
   void afbeelden() {
     strokeWeight(15);
-    stroke(255,0,0);
+    stroke(0,0,0);
 //lines voor kruisje
     pushMatrix();
     //de lijnen om het kruisje te maken en de posities waar hij op moet komen als je op je muis klikt
